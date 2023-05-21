@@ -127,6 +127,7 @@ public class Node {
     public double heuristicValue() {
         int manhattanDistance = calculateManhattanDistance();
         int hammingDistance = calculateTotalHammingDistance();
+
         return  ((manhattanDistance*1.2)*(hammingDistance*7.3));
     }
 }
